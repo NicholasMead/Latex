@@ -1,0 +1,166 @@
+\documentclass[a4paper,11pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec}           %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip}   %other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}        %better formatting of the A4 page
+\usepackage{fullpage} 
+\usepackage{titlesec}         %custom \section
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+  SmallCapsFont = Fontin-SmallCaps.otf,
+  BoldFont = Fontin-Bold.otf,
+  ItalicFont = Fontin-Italic.otf
+]{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-0.7cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+  {\Huge\textsc{Nicholas Mead |} \textit{MPhys (Hons)}
+  }\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+
+\begin{tabular}{rlr}
+  \textsc{Location:}  & West Sussex, UK\\ 
+  \textsc{Phone:}     & +44 (0) 7848 146 937\\
+  \textsc{Email:}     & nickmead.tech@gmail.com
+\end{tabular}
+
+\footnotesize{
+An enthusiastic and dedicated professional, I am passionate about designing and building new and exciting technology. I've worked with a wide range of software and programming languages, both professionally and academically spanning hardware design to global scale software automation.
+
+Outside the office I am easy-going and adventurous. I enjoy exercise, the company of my family and friends, and learning new things. I have a varied range of hobbies from photography to hot air ballooning.}
+
+
+%Section: Work Experience ---------------------------
+\section{Experience}
+\begin{tabular}{r|p{12.5cm}}
+    \textsc{September 2016}
+        & \textbf{Pilot Automation in Financial Sector} | \emph{Symphony Ventures}\\
+    \textsc{ - Present}
+        & \footnotesize{Together with a small team, I've designed and build a large scale automation for one of the world largest companies. I was responsible for the technical design of the project, and managing the work for three developers. I have been at the front of client meetings both in the UK and the US on multiple occasions and have a strong business report with the project directors and senior investors.}\\
+    \multicolumn{2}{c}{}\\
+    \textsc{June 2016}
+        & \textbf{Pilot Automation in Distribution Sector} | \emph{Symphony Ventures}\\
+    \textsc{ - September 2016}
+        & \footnotesize{Single handed, I developed the first automation deployed into a global brands European shared service operation. From concept to production, I was responsible for the design, implementation and testing of the solution - leaning from the experience and knowledge of senior management. I lead meetings with the client, provided detailed reports on the project status to senior directors and ensured the project was a ground breaking success.}\\
+    \multicolumn{2}{c}{}\\    
+    \textsc{September 2015}
+        & \textbf{FPGA Development, LHCb Vertex Locator Upgrade} | \emph{University of Manchester}\\
+    \textsc{ - May 2016}
+        & \footnotesize{My role in the project was to create a pre-cpu data analysis chip that performed a crucial optimisation algorithm. My work allows the main data analysis clusters to prioritise easier to processes data sets, clearing them from memory to prevent data build-up.}\\
+    \multicolumn{2}{c}{}\\
+    \textsc{January 2015}
+        & \textbf{Measuring Fundamental Symmetries at the LHC} | \emph{University of Manchester}\\
+    \textsc{- March 2015}
+        & \footnotesize{In this project, I analysed the data from 8.5 million LHCb particle collisions in order to measure the fundamental symmetry of matter and antimatter. To deal with the large data set, I wrote an analysis program in C++ and used the particle physics data analysis library `ROOT' to present my results.}\\
+        & \footnotesize{My work was well received by my supervising Professor who specifically praised the professional standard of my work - far beyond that expected of an undergraduate student.}
+    \multicolumn{2}{c}{}\\
+    \textsc{February 2009}
+        & \textbf{Part-Time and Summer Work}\\
+        & \footnotesize{From the age of 16, I have worked part time and summers along side my studies. I've always been a reliable and hard working employee. I enjoy being in a team, but also being alone to focus. I believe in working hard and being proud of what I achieve.}\\
+        
+\end{tabular}
+
+\section{Professional Skills}
+\begin{tabular}{r|p{13cm}}
+    Software Engineering  
+        & \textbf{Proficient} \\
+        & \footnotesize{\textsc{C\#, C++, Python, SQL, VHDL, HTML5, CSS.}} \\
+        & \textbf{Some Experience} \\
+        & \footnotesize{\textsc{Javascript (JQuery, JSON), Ruby on Rails, Java, Unity.}}\\
+        & \textbf{Commonly Used Tools} \\
+        & \footnotesize{\textsc{Git, Agile, Visual Studio Enterprise, VSTS Continuous Integration, Command Line}}\\
+        & \\
+        & As the lead developer, I design, build and manage the creation of in-house software. Delivering significant efficiency gains to our operations to the benefit of our operations team and our 
+        I am a proficient programmer, with a large scope of skills. I am capable to working in a wide range of languages, many of which I have studied in my free time.\\
+        & Within my current role, I'm `the' person people turn to when people run into programming difficulties - It is great to get to help others while also solving new problems and learning new skills. \\
+        
+    \multicolumn{2}{c}{}\\
+    Business Analysis
+        & \textbf{Process Redesign}\\
+        & \footnotesize{I've been responsible for redesigning business processes to make them optimised for automation. My processes designs have not only improved processing efficiency but allowed for multiple developers to work productively together to deliver projects against challenging deadlines.}\\
+        & \textbf{Consultancy}\\
+        & \footnotesize{As a consultant I have coached and advised my business clients throughout their business transformation. I worked with clients from the start of projects - understanding their specific needs, to the deployment and support of new virtual workforces.}\\
+        & \textbf{Project Management} \\
+        & \footnotesize{I've lead small development team, being responsible for the estimation of work and planning of resource and delivered by projects on time and budget.} \\   
+    \multicolumn{2}{c}{}\\
+    Data Analysis
+        & \textbf{Big Data}\\
+        & \footnotesize{When working with large data sets I've been required to use multi-thread programming, optimising processes and an efficient programming style.}\\
+        & \textbf{Large Hadron Collider (LHCb Experiment)}\\
+        & \footnotesize{I have analysed data from the LHCb experiment, finding evidence for the asymmetry of matter and anti-matter.} \\
+        & \textbf{Analysis Based Design} \\
+        & \footnotesize{By performing simulations and data analysis, I've informed possible hardware design paths of the 2018 upgrade on the LHCb experiment.} \\
+        & \textbf{Fluent in Statistical Processes including} \\
+        & \textsc{\footnotesize{Probability Theorem, Statistical Significance, Stochastic Mathematics, The 'Look-Else-Where' Effect, Markov Chains, Google 'Page-Rank' Algorithm, Gillespie Algorithm}} \\
+\end{tabular}
+
+
+%Section: Education -----------------------------------
+
+\section{Professional Experience}
+
+\begin{tabular}{r|p{12.5cm}}  
+    \textsc{June 2016} 
+        & \textbf{Technical Consultant} | \emph{Symphony Ventures}\\ 
+    \textsc{- Present}
+        & \footnotesize{Symphony is a globally recognised consultancy delivering automation automaton to large global clients.} \\
+        & \footnotesize{During my time at Symphony, I have been responsible for the delivery of multiple development projects and the mentoring of new joiners. I have been exposed and trained in multiple new technologies and qualified as an accredited Blue Prism developer.} \\
+        & \footnotesize{I'm established as a problem solver and automation design guru - with many of my reuse-able components being staple in company projects.}\\
+        & \footnotesize{I've mentored half a dozen new joiners and lead development teams when delivering projects.} \\
+\end{tabular}
+
+
+
+\section{Graduate Qualifications}
+\begin{tabular}{r|p{12.5cm}}  
+    \textsc{September 2012} 
+        & \textbf{MPhys (Hons) Physics} | \emph{University of Manchester}\\ 
+    \textsc{- July 2016}
+        &\footnotesize{\textsc{Graduated with a 2:1 and honours}}\\
+        & \footnotesize{During my time at University I have learnt a wide range of transferable skills. From a deep understanding of Mathematics to programming and data analysis, my degree has been an intense master class in analytical thinking and problem solving.} \\
+        & \footnotesize{I prioritised my time to learning new skills and problem solving techniques. This allows me break down problems and apply first principles to turn large, complicated tasks into smaller, manageable steps. I'm not a 'cram for exams' kind of guy, instead focusing on real-world applicable skills - Hence my wide rage of self-taught, extra circular learning.} \\
+
+  %\multicolumn{2}{c}{}\\
+    %foundation year
+    %\textsc{September 2011}  
+    %    & \textbf{Science and Engineering Foundation Year} | \emph{University %of Manchester}\\
+    %\textsc{- July 2012}
+    %    &  \footnotesize{\textsc{Grade}: 81\%}
+\end{tabular}
+
+% \section{Interests and Activities}
+% \begin{tabular}{r|p{12.5cm}}
+%   Hot Air Ballooning  & \footnotesize{I've been Hot Air Ballooning with my family for several years. From flying the balloon to staying on the ground as support crew, its a takes team effort to get a balloon in the air and back down safely. I enjoy being involved, especially when I can help introduce other to the sport.
+%   \multicolumn{2}{c}{}\\
+%   Other &\footnotesize{\textsc{Photography, Climbing, Mountaineering, Technology (Arduino | Raspberry Pi | side-projects)}
+% \end{tabular}
+
+\end{document}
+
